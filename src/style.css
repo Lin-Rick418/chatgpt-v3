@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-white px-3 py-2 text-sm cursor-pointer hover:bg-black hover:text-white rounded-md;
+  }
+
+  /* Dark mode for buttons */
+  .dark .btn {
+    @apply bg-gray-700 text-white hover:bg-gray-800;
+  }
+
+  .input {
+    @apply px-4 py-2 text-gray-700 bg-white border rounded-md mr-2 sm:mr-4 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 flex-grow;
+  }
+
+  /* Dark mode for inputs */
+  .dark .input {
+    @apply bg-gray-800 text-gray-300 border-gray-600 focus:border-blue-500 focus:ring-blue-500;
+  }
+
+  /* Toggle Checkbox */
+  .toggle-checkbox {
+    @apply appearance-none w-8 h-4 bg-gray-300 rounded-full relative cursor-pointer transition-all duration-300 ease-in-out;
+  }
+
+  .toggle-checkbox:checked {
+    @apply bg-green-500;
+  }
+
+  .toggle-checkbox::before {
+    content: "";
+    @apply absolute w-4 h-4 bg-white rounded-full top-1/2 left-1 transform -translate-y-1/2 transition-all duration-300 ease-in-out;
+  }
+
+  .toggle-checkbox:checked::before {
+    @apply left-[calc(100%-1.25rem)]
+  }
+}
