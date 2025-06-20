@@ -1,5 +1,25 @@
-# Vue 3 + TypeScript + Vite
+# ChatGPT-Vue3 Demo
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+本專案為面試作品，展示使用 Vue 3 + TypeScript 的實作能力。  
+主要功能為串接 OpenAI API，實現一個簡易版的 ChatGPT 對話介面。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🔧 技術棧
+
+- ⚙️ **Vue 3**（Composition API）
+- 🛡 **TypeScript**
+- 🎨 **Tailwind CSS**
+- 🔗 **OpenAI API 串接**
+
+## 📌 目的
+
+此專案僅用於面試展示，強調前端框架運用與 API 串接實作，介面設計風格簡潔。
+
+## 📎 使用方式
+
+1. 複製 `.env.example` 並命名為 `.env`
+2. 填入你的 `VITE_OPENAI_API_KEY`
+3. 執行開發環境：
+
+```bash
+npm install
+npm run dev
